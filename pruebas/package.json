@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mdmiguel/cursoJavaScript/issues"
   },
-  "homepage": "https://github.com/mdmiguel/cursoJavaScript#readme"
+  "homepage": "https://github.com/mdmiguel/cursoJavaScript#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
