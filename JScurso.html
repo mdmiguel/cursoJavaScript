@@ -7,62 +7,36 @@
 <body>
 	<script type="text/javascript">
 
-		/*var nombre = 'Ciencia del aprendizaje fácil'
-		var abv = "CIAPFA"
-		const VIDEOS = 15
-		let num1 = 10
-		let num2 = 20
-		let suma = num1 + num2
-		var decimal = 5.432456543
-		var mostrar=  `NOMBRE: ${nombre.toUpperCase()} Abreviatura: ${abv.toLowerCase()} SUMA: ${suma} Mi decimal es: ${decimal.toFixed(4)}`
+			pelicula1 = {
+				titulo : 'Anabelle 4',
+				anio : 2014
+			}
+			pelicula2 = {
+				titulo : 'Conjuro',
+				anio : 2013
+			}
+			pelicula3 = {
+				titulo : 'Monja',
+				anio : 2018
+			}
+		
+		let peliculas = [pelicula1, pelicula2, pelicula3]
 
-		//console.log( `NOMBRE: ${nombre.toUpperCase()} Abreviatura: ${abv.toLowerCase()} SUMA: ${suma} Mi decimal es: ${decimal.toFixed(4)}`)
-
-		function miFunction(m){
-
-			console.log(m)
-
+		if(peliculas[0].titulo == "Anabelle"){
+			console.log("Estas viendo Anabelle")
+		}else if (peliculas[0].titulo == "Anabelle 2"){
+			console.log("Estas viendo Anabelle 2")
+		}else{
+			console.log("Estas viendo otra película")
 		}
 
-		miFunction(mostrar);
-*/	
-	function suma(n1,n2){
-		result = n1 + n2
-		return result
-	}
+		for(let i = 0; i<peliculas.length; i++){
+			console.log(peliculas[i].titulo)
+		}
 
-	var miOtroObjeto = {
-		nombre : 'Mi nuevo objeto :)'
-
-	}
-
-	var miPelicula = {
-		titulo : 'Avengers End Game',
-		anio: 2019,
-		fans :  `20.600.700 fanaticos`,
-		importante : true,
-		fecha : new Date(),
-		personajes : ["Iron Man", "Thor", "Capitan América"],
-		miFuncion : suma(50,50),
-		nombre : 'Vengadores',
-		nuevoObjeto : miOtroObjeto
-	}
-
-	console.log(miPelicula.nuevoObjeto.nombre)
-
-	var {nombre} = miPelicula
-
-	//console.log(miPelicula.personajes[1] + miPelicula.titulo)
-
-	function miFecha(fecha,title, {miFuncion},nombre){
-		console.log(nombre)
-		console.log(fecha.toDateString())
-		console.log(`${fecha.getFullYear()}-${fecha.getMonth()}-${fecha.getDay()}`)
-		console.log(title.substring(0,5))
-	}
-
-	miFecha(miPelicula.fecha, miPelicula.titulo, miPelicula, nombre)
-
+		peliculas.forEach(function(elemento){
+			console.log(`Titulo: ${elemento.titulo} Año: ${elemento.anio}`)
+		})
 
 	</script>
 </body>
